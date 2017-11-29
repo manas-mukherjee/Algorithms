@@ -1,7 +1,7 @@
-package sedgewick_wayne_safari.stack_queue;
+package sedgewick_algo.week2_stack_queue;
 import edu.princeton.cs.algs4.*;
 
-public class LinkedStackOfStrings {
+public class LinkedStackOfStrings{
 
     private Node first = null;
 
