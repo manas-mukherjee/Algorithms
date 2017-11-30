@@ -5,6 +5,13 @@ public class LinkedStackOfStrings{
 
     private Node first = null;
 
+    /*
+        Size : 40 byes
+        Class : 16 bytes
+        Inner-Class : 8 bytes
+        item : ref to String - 8 bytes
+        Node : ref to Node - 8 bytes
+     */
     private class Node{
         String item;
         Node next;
@@ -31,11 +38,12 @@ public class LinkedStackOfStrings{
         LinkedStackOfStrings stack = new LinkedStackOfStrings();
         while (!StdIn.isEmpty()) {
             String item = StdIn.readString();
-            if (!item.equals("-"))
+
+            if(item.equals("-")){
+                StdOut.print(stack.pop());
+            }else {
                 stack.push(item);
-            else if (!stack.isEmpty())
-                StdOut.print(stack.pop() + " ");
+            }
         }
-        //StdOut.println("(" + stack.size() + " left on stack)");
     }
 }
