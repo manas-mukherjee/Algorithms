@@ -1,4 +1,4 @@
-package sedgewick_algo.week2_stack_queue.stack;
+package sedgewick_algo.week2_stack_queue_basicsort.stack;
 
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
