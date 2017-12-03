@@ -12,6 +12,7 @@ public class MergeSort {
     private static int counter;
 
     public static void sort(Comparable[] a, Comparable[] aux, int lo, int hi){
+        System.out.println("sort("+ lo + ","+hi+")");
         if(lo>=hi){
             return;
         }
@@ -22,7 +23,7 @@ public class MergeSort {
     }
 
     public static void merge(Comparable[] a, Comparable[] aux, int lo, int mid, int hi){
-
+        System.out.println("merge("+ lo + "," +mid+ ","+hi+")");
         assert isSorted(a, lo, mid);
         assert isSorted(a, mid+1, hi);
 
@@ -44,6 +45,7 @@ public class MergeSort {
             }
         }
         assert isSorted(a, lo, hi);
+        show(a);
     }
 
     private static void show(Comparable[] a) {
@@ -91,5 +93,5 @@ public class MergeSort {
         show(a);
 
         StdOut.print("\n Total operation - " + counter);
-    } 
+    }
 }
