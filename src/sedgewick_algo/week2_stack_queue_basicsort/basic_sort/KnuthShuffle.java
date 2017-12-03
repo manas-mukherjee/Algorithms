@@ -12,7 +12,7 @@ public class KnuthShuffle {
     }
 
     public static void main(String args[]){
-        Object[] a = {1,2,3,4,5};
+        Object[] a = {1,4,7,10,12,3,8,11,15};
         show(a);
         KnuthShuffle.shuffle(a);
         show(a);
