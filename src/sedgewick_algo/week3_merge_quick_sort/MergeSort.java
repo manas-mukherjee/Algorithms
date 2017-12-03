@@ -91,5 +91,5 @@ public class MergeSort {
         show(a);
 
         StdOut.print("\n Total operation - " + counter);
-    }
+    } 
 }
