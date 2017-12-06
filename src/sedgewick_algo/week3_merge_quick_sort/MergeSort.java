@@ -64,15 +64,6 @@ public class MergeSort {
         return true;
     }
 
-    private static boolean isSorted(Comparable[] a){
-        for (int i = 0; i < a.length-1; i++) {
-            if(!less(a[i], a[i+1])){
-                return false;
-            }
-        }
-        return true;
-    }
-
     private static boolean less(Comparable v, Comparable w) {
         counter++;
         return v.compareTo(w) < 0;
