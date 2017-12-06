@@ -33,13 +33,18 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        Integer[] a = {12, 10, 15, 1, 7, 8, 3, 7, 4, 0, - 1, -2, 99, 10};
+        Integer[] a = {12, 10, 15, 1, 13, 8, 3, 7, 4, 0, - 1, -2, 99, 33};
 
         show(a);
         QuickSort.sort(a);
         show(a);
 
         StdOut.print("\n Total operation - " + counter);
+
+        int kth = 11;
+        StdOut.print("\n " + kth + "the largest element - " + select(a, 7));
+
+
     }
 
     private static void sort(Integer[] a) {
@@ -84,5 +89,20 @@ public class QuickSort {
         Object temp = a[i];
         a[i] = a[j];
         a[j] = temp;
+    }
+
+    public static Comparable select(Comparable[] a, int k){
+        int lo=0, hi=a.length-1;
+        while(hi>lo){
+            int j = partition(a, lo, hi);
+            if(j<k){
+                lo = j + 1;
+            }else if(j>k){
+                hi = j -1;
+            }else {
+                return a[k];
+            }
+        }
+        return a[k];
     }
 }
