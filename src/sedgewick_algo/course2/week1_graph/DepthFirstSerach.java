@@ -6,7 +6,7 @@ Tremaux maze exploration
 2. Mark each passage and intersection
 3. Retrace steps when no unvisited options
 
-DepthFirstPaths(to visit a vertex v)
+DepthFirstSerach(to visit a vertex v)
     Mark v as visited.
     Recursively visit all unmarked vertices
         w adjacent to v
@@ -15,12 +15,12 @@ DepthFirstPaths(to visit a vertex v)
 import edu.princeton.cs.algs4.In;
 import edu.princeton.cs.algs4.Stack;
 
-public class DepthFirstPaths {
+public class DepthFirstSerach {
     private boolean[] marked;
     private int[] edgeTo;
     private int s;
 
-    DepthFirstPaths(Graph G, int s){
+    DepthFirstSerach(Graph G, int s){
         this.marked = new boolean[G.getV()];
         this.edgeTo = new int[G.getV()];
         this.s = s;
@@ -57,7 +57,7 @@ public class DepthFirstPaths {
 
     public static void main(String args[]){
         Graph graph = new Graph(new In(args[0]));
-        DepthFirstPaths dfs = new DepthFirstPaths(graph, 0);
+        DepthFirstSerach dfs = new DepthFirstSerach(graph, 0);
 
         System.out.println("Has path to node 3 ? -> " + dfs.hasPathTo(3));
         System.out.println("Path to node 3. -> " + dfs.pathTo(3));
