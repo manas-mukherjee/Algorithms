@@ -4,6 +4,9 @@ package sedgewick_algo.course2.week1_graph;
 Repeat until the queue is empty:
     remove vertex v from the queue:
     Add to queue all unmarked vertices adjacent to V and mark them
+
+Ex -
+ARPANAET, Kevin Bacon Number,Erdos graph
 */
 
 import edu.princeton.cs.algs4.In;
