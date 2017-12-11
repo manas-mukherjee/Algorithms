@@ -2,7 +2,7 @@ package leetcode.easy;
 
 /*
 
-Complexity Analysis
+Complexity Analysis ( Refered from leetcode )
 
 Time complexity : O(S)O(S) , where S is the sum of all characters in all strings.
 In the worst case there will be nn equal strings with length mm and the algorithm performs S = m*nS=m∗n character comparisons.
