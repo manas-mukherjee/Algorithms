@@ -1,4 +1,4 @@
-package sedgewick_algo.course2.week1_graph;
+package sedgewick_algo.course2.week1_graph.undirected;
 
 import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.In;
