@@ -16,7 +16,7 @@ public class ExcelSheetColumnNumber171 {
 
     public static void main(String args[]) {
         ExcelSheetColumnNumber171 obj = new ExcelSheetColumnNumber171();
-        int num = obj.titleToNumber("AC");
+        int num = obj.titleToNumber("AAC");
         System.out.println(num);
     }
 }
